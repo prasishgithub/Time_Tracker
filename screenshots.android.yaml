@@ -1,0 +1,38 @@
+# Screen capture tests
+# Note: flutter driver expects a pair of files eg, main.dart and main_test.dart
+tests:
+  - test_driver/screenshots.dart
+
+# Interim location of screenshots from tests before processing
+staging: ./tmp/screenshots
+
+# A list of locales supported in app
+locales:
+  - it
+  - ar
+  - cs
+  - en
+  - fr
+  - da
+  - de
+  - es
+  - hi
+#  - id # not working for some reason
+  - ja
+  - ko
+  - nb-NO
+  - pt
+  - ru
+  - tr
+  - zh-CN
+  - zh-TW
+
+# A list of devices to run tests on
+devices:
+  android:
+    Nexus 5X:
+      orientation:
+        - Portrait
+
+# Frame screenshots
+frame: false
